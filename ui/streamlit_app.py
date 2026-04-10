@@ -1,8 +1,15 @@
+
+
 import streamlit as st
 import pandas as pd
 import numpy as np # Required for np.mean
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath('.'))
+
 # Import functions and variables from created modules
+
 from ai.model import load_model_components, predict_recovery_probability
 from ai.explainability import decide_action
 from backend.sla_engine import check_sla_risk
