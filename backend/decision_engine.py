@@ -1,5 +1,9 @@
 import pandas as pd
 
+import sys
+import os
+sys.path.insert(0, os.path.abspath('.'))
+
 # Import components
 from ai.model import load_model_components, predict_recovery_probability
 from ai.explainability import decide_action
